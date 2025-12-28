@@ -6,4 +6,4 @@ def bumble(nums):
                 nums[j],nums[j+1] = nums[j+1],nums[j]
     return nums
 
-print(bumble([5,1,6,8,2,4,9]))
+print(bumble([5,1,6,8,2,4,9]))```````````
