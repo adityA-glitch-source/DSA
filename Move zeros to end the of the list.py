@@ -8,3 +8,4 @@ for j in range(0,len(temp)):
 for k in range(len(temp),len(nums)):
     nums[k] = 0
 print(nums)
+
