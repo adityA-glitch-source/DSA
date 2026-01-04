@@ -11,3 +11,18 @@
    # return maxi
 #print(max_subarray([-2,1,-3,4,-1,2,1,-5,4]))
 
+## Kadence algorithm
+def max_subarray(nums):
+    l = nums
+    n = len(nums)
+    maxi = float("-inf")
+    total = 0
+    for i in range(0,n):
+        total += l[i]
+        maxi = max(maxi,total)
+        if total<0:
+            total = 0
+    return maxi
+
+print(max_subarray([-2,1,-3,4,-1,2,1,-5,4]))
+
