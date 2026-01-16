@@ -11,5 +11,5 @@ def lcs(nums):
         else:
             l = 1
     return max_length
-print(lcs([1,2,3,5,98,99,100,101]))
+print(lcs([1,99,101,98,2,5,3,100,1,1]))
 
