@@ -3,11 +3,40 @@ rows = len(nums)
 cols = len(nums[0])
 
 ## Upper triangle
+## for i in range(0,rows):
+    ## for j in range(0,cols):
+        ## if j>=i:
+            ## print(nums[i][j],end=" ")
+       ## else:
+            ##print('*',end=" ")
+
+   ## print()
+
+## Lower triangle
+
+##for i in range(0,rows):
+     ##for j in range(0,cols):
+         ##if i>=j:
+            ##print(nums[i][j],end=" ")
+         ##else:
+            ##print('*',end=" ")
+
+     ##print()
+
+## Print diagonal
+## for i in range(0,rows):
+     ##for j in range(0,cols):
+         ##if j==i:
+            ##print(nums[i][j],end=" ")
+         ##else:
+             ##print('*',end=" ")
+
+     #print()
 for i in range(0,rows):
     for j in range(0,cols):
-        if j>=i:
-            print(nums[i][j],end=" ")
+        if j == (cols-1) - i:
+            print(nums[i][j],end = ' ')
         else:
-            print('*',end=" ")
-
+            print('*',end = ' ')
     print()
+
